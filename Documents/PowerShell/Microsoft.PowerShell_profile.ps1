@@ -1,3 +1,6 @@
+# Variables
+$env:EDITOR = "nvim"
+
 # Set config directory location
 $env:XDG_CONFIG_HOME = "$HOME/.config"
 
