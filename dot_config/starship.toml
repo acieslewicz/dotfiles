@@ -1,8 +1,21 @@
+# Do not insert a new line between each prompt
+add_newline = false
 
 # Theming
-
 palette = "catppuccin_mocha"
 
+# Prompt Layout
+format = """
+$all\
+$linebreak$character"""
+
+# Prompt behavior
+command_timeout = 1000
+
+# Modules
+
+
+# Palettes
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
