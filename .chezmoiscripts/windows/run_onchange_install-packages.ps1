@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.os "windows" -}}
 # Self-elevate the script if required
 if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator')) {
   if ([int](Get-CimInstance -Class Win32_OperatingSystem | Select-Object -ExpandProperty BuildNumber) -ge 6000) {
@@ -15,4 +14,3 @@ if (Test-Path $configPath) {
 } else {
     Write-Error "Configuration file not found at $configPath"
 }
-{{ end -}}
