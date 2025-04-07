@@ -1,0 +1,66 @@
+{{ if eq .chezmoi.os "windows" -}}
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  assertions:
+    - resource: Microsoft.Windows.Developer/OsVersion
+      directives:
+        description: Verify min OS version requirement
+      settings:
+        MinVersion: '10.0.22000'
+  resources:
+    - resource: Microsoft.Windows.Developer/DeveloperMode
+      directives:
+        description: Enable Developer Mode
+        allowPrerelease: true
+      settings:
+        Ensure: Present
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install chezmoi
+      settings:
+        id: twpayne.chezmoi 
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Bitwarden
+      settings:
+        id: Bitwarden.Bitwarden
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install GitHub CLI
+      settings:
+        id: GitHub.cli 
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install Powershell 7
+      settings:
+        id: Microsoft.PowerShell 
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install Starship
+      settings:
+        id: Starship.Starship
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives: 
+        description: Install direnv
+      settings:
+        id: direnv.direnv 
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install neovim
+      settings:
+        id: Neovim.Neovim
+        source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install Firefox
+      settings:
+        id: Mozilla.Firefox
+        source: winget
+  configurationVersion: 0.1.0
+{{ end -}}
