@@ -1,4 +1,3 @@
-{{ if eq .chezmoi.os "windows" -}}
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
 properties:
   assertions:
@@ -71,4 +70,3 @@ properties:
         source: winget
 
   configurationVersion: 0.1.0
-{{ end -}}
