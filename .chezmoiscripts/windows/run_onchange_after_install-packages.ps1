@@ -14,3 +14,7 @@ if (Test-Path $configPath) {
 } else {
     Write-Error "Configuration file not found at $configPath"
 }
+
+Install-PSResource -Name NerdFonts
+Import-Module -Name NerdFonts
+Install-NerdFont -Name "Iosevka"
