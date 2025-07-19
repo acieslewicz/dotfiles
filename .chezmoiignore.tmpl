@@ -12,6 +12,6 @@ Onedrive
 .bashrc.d/**
 {{ end -}}
 
-{{ if not ( or ( contains "microsoft" ( lower .chezmoi.kernel.osrelease )) ( contains "wsl" ( lower .chezmoi.kernel.osrelease ))) }}
+{{- if and (hasKey .chezmoi.kernel "osrelease") (not ( or ( contains "microsoft" ( lower .chezmoi.kernel.osrelease )) ( contains "wsl" ( lower .chezmoi.kernel.osrelease )))) }}
 .bashrc.d/agent-bridge.bashrc
 {{ end -}}
