@@ -1,0 +1,6 @@
+packages:
+  ubuntu:
+    base:
+      - "neovim"
+    wsl:
+      - "socat"

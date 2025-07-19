@@ -1,0 +1,21 @@
+{{ if eq .chezmoi.osRelease.id "ubuntu" -}}
+
+{{ $sudo := "sudo " -}}
+{{ if eq .chezmoi.username "root" -}}
+{{   $sudo = "" -}}
+{{ end -}}
+
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ $sudo }}apt update
+
+# Install base packages used on all systems
+{{ $sudo }}apt install -y {{ .packages.ubuntu.base | join " " }}
+{{ if ( or ( contains "microsoft" ( lower .chezmoi.kernel.osrelease )) ( contains "wsl" ( lower .chezmoi.kernel.osrelease ))) }}
+# Install packages used only on wsl instances
+{{ $sudo }}apt install -y {{ .packages.ubuntu.wsl | join " " }}
+{{ end -}}
+
+{{ end -}}

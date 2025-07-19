@@ -5,3 +5,7 @@ README.md
 Onedrive
 .config/winget
 {{ end -}}
+
+{{ if ne .chezmoi.os "linux" -}}
+.chezmoiscripts/linux/**
+{{ end -}}
