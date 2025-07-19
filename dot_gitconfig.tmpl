@@ -1,8 +1,8 @@
 [user]
-	name = Alexander Cieslewicz
-	email = alexander.cieslewicz@gmail.com
-
-{{ if eq .chezmoi.os "windows" -}}
+    name = Alexander Cieslewicz
+    email = alexander.cieslewicz@gmail.com
 [core]
+    editor = nvim
+{{- if eq .chezmoi.os "windows" }}
     sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
-{{ end -}}
+{{- end }}
