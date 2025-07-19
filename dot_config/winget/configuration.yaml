@@ -68,5 +68,11 @@ properties:
       settings:
         id: Mozilla.Firefox
         source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install npiperelay
+      settings:
+        id: albertony.npiperelay
+        source: winget
 
   configurationVersion: 0.1.0
