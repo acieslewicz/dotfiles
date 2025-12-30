@@ -17,4 +17,4 @@ if (Test-Path $configPath) {
 
 Install-PSResource -Name NerdFonts
 Import-Module -Name NerdFonts
-Install-NerdFont -Name "Iosevka"
+Install-NerdFont -Name "Zed Mono"
