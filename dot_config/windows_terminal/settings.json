@@ -75,7 +75,7 @@
         },
         {
             "icon": null,
-            "profile": "{f793931a-4b34-5ce4-8383-166ab36e641f}",
+            "profile": "{2b960e45-1c98-49a8-9e4d-2bb4b3b5d6b5}",
             "type": "profile"
         }
     ],
@@ -121,6 +121,13 @@
                 "tabTitle": "Git Bash"
             },
             {
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu --cd ~",
+                "guid": "{2b960e45-1c98-49a8-9e4d-2bb4b3b5d6b5}",
+                "icon": "https://assets.ubuntu.com/v1/49a1a858-favicon-32x32.png",
+                "name": "Ubuntu",
+                "hidden": false
+            },
+            {
                 "guid": "{f793931a-4b34-5ce4-8383-166ab36e641f}",
                 "hidden": false,
                 "name": "Ubuntu",
@@ -138,30 +145,6 @@
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
-            {
-                "guid": "{7ecf207e-ad27-50cb-b147-22375f76491b}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{94874d7f-de62-5f50-becd-32c6fa773a0b}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{6ccb6975-e8bf-5ab0-80fa-ab2148e26246}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022 (2)",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{81d281f9-8a5b-5787-842b-2fc3eea7840a}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022 (2)",
-                "source": "Windows.Terminal.VisualStudio"
-            }
         ]
     },
     "schemes": 
