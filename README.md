@@ -15,3 +15,4 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex "&{$(irm 'https://raw.gith
 ## Inspirations/References
 - https://github.com/MovieMaker93/devpod-dotfiles-chezmoi
 - https://github.com/twpayne/dotfiles
+- https://github.com/renemarc/dotfiles
