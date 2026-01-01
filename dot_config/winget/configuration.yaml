@@ -74,5 +74,11 @@ properties:
       settings:
         id: albertony.npiperelay
         source: winget
+    - resource: Microsoft.Winget.DSC/WinGetPackage
+      directives:
+        description: Install Zed
+      settings:
+        id: ZedIndustries.Zed
+        source: winget
 
   configurationVersion: 0.1.0
