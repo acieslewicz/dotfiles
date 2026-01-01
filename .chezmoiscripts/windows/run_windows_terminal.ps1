@@ -10,4 +10,4 @@ if ((Test-Path $src) -and (Test-Path $dest)) {
     if ((Get-FileHash $src).Hash -eq (Get-FileHash $dest).Hash) { exit 0 }
 }
 
-Copy-Item $src $dest -Force -Verbose
+Copy-Item $src $dest -Force
