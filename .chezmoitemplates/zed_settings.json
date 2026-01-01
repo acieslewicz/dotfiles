@@ -1,0 +1,19 @@
+// Zed settings
+{
+  "disable_ai": true,
+  "colorize_brackets": true,
+  "buffer_font_family": "ZedMono Nerd Font",
+  "show_edit_predictions": false,
+  "vim_mode": true,
+  "icon_theme": "Catppuccin Mocha",
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "file_types": {
+    "C++": ["mm", "m"],
+  },
+}
