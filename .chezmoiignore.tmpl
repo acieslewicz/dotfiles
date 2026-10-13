@@ -15,5 +15,5 @@ OneDrive
 {{ end -}}
 
 {{- if and (hasKey .chezmoi.kernel "osrelease") (not ( or ( contains "microsoft" ( lower .chezmoi.kernel.osrelease )) ( contains "wsl" ( lower .chezmoi.kernel.osrelease )))) }}
-.bashrc.d/agent-bridge.bashrc
+.bashrc.d/ssh-alias.bashrc
 {{ end -}}
