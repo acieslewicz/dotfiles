@@ -4,9 +4,7 @@
 [core]
     editor = nvim
     autocrlf = false
-{{- if eq .chezmoi.os "windows" }}
-    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
-{{- end }}
+    sshCommand = ssh.exe
 [branch]
     autosetuprebase = always
 [merge]
