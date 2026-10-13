@@ -70,12 +70,6 @@ properties:
         source: winget
     - resource: Microsoft.Winget.DSC/WinGetPackage
       directives:
-        description: Install npiperelay
-      settings:
-        id: albertony.npiperelay
-        source: winget
-    - resource: Microsoft.Winget.DSC/WinGetPackage
-      directives:
         description: Install Zed
       settings:
         id: ZedIndustries.Zed
